@@ -8,6 +8,7 @@ int main(){
 
     int i =2;
 
+
     while(i<n){
         if(n%i==0){
             cout<<"not prime for "<<i<<endl;
@@ -19,6 +20,6 @@ int main(){
     }
 
    
-
+//code ends here
     return 0;
 }
