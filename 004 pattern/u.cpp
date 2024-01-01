@@ -5,39 +5,37 @@ int main(){
     //********************pattterns ***************************
     
     /*
-    ****  
-     ***
-      **
-       *
+    _ _ _ *
+    _ _ * *
+    _ * * *
+    * * * *
     */
 
 
     int n;
     cin>>n;
 
-    int  i =1;
-    while(i<=n){
-        
+    int  row =1;
 
+    while(row<=n){
         //space print
-
-        int space = i-1;
-        while(space<=n){
+        int space =n-row;
+        while(space){
             cout<<"_";
-            space++;    
+            space--;
         }
 
-        int j = 1;
-        while(j<=i){
+
+        //stars print 
+
+        int col = 1;
+        while(col<=row){
             cout<<"*";
-            j--;
+            col++;
         }
-
         cout<<endl;
-        i++;
-
-
-    }
+        row++;
+    }    
 
     return 0;
 }

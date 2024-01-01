@@ -5,39 +5,27 @@ int main(){
     //********************pattterns ***************************
     
     /*
-    ****  
-     ***
-      **
-       *
+    321
+    321
+    321  
     */
-
 
     int n;
     cin>>n;
 
-    int  i =1;
+    int  i = 1;
     while(i<=n){
-        
-
-        //space print
-
-        int space = i-1;
-        while(space<=n){
-            cout<<"_";
-            space++;    
-        }
-
         int j = 1;
-        while(j<=i){
-            cout<<"*";
-            j--;
+        while(j<=n){
+            cout<<n-j+1;
+            j++;
         }
-
         cout<<endl;
         i++;
-
-
     }
 
+
+
+    
     return 0;
 }
